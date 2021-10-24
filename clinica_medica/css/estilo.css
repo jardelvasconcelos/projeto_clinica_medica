@@ -1,0 +1,185 @@
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+main{
+  margin-bottom: 60px;
+}
+#sobre,
+#especialidades,
+#contato {
+  padding: 40px 20px 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.topo .container{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 auto;
+    min-height: 60px;
+}
+.topo{
+  width: 100%;
+  background-color: rgb(9, 173, 223);
+}
+.flex-topo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.links-topo{
+  display: flex;
+}
+.links-topo a{
+    
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px;
+    /* font-size: 20px;
+    font-weight: bold; */
+}
+.topo-logo{
+  height: 60px;
+}
+.links-topo a:hover{
+    color: black;
+}
+@media (max-width: 425px){
+  .topo .container {flex-direction: column;} 
+  .flex-topo{margin: 10px 0;}
+  .links-topo{ width: 100%; border-top: 1px solid #009fa5; justify-content:space-around; padding:10px}
+
+}
+
+.image-home{  
+    position: relative;
+    background-image: url("../assets/recepcao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+/*position: relative;
+  background-image: url('../assets/recepcao.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px; */
+
+  .home{
+      display: flex; 
+      align-items: center;
+      height: 100%;
+      padding: 10px;
+      
+  }
+  .home h1 {
+    text-transform: uppercase;
+    font-size: 38px;
+    color: #ffffff;
+   /*  font-weight: bold; */
+  }
+  @media (max-width: 1024px){
+    .image-home{height: 400px;}
+  }
+  @media (max-width: 768px){
+    .image-home{height: 300px;}
+  }
+  @media (max-width: 425px){
+    .image-home{height: 200px;}
+    .image-home h1{font-size: 28px;}
+  }
+  /*CASO USAR-SE O FLEXBOX =
+   .conteudo-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  } */
+  .conteudo-sobre , .box-especialidades {
+      /* text-align: center; */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .box-sobre{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .box-img-especialidades {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .box-img-especialidade {
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+  }
+  .box-img-especialidade img{
+      width: 100%;
+  }
+  /* USANDO FLEXBOX
+      .box-img-especialidade img{
+      width: 100%;
+      border-radius: 3px;
+      box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+
+  } */
+  .box-img-especialidade figcaption {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+  .box-link-horario{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .link-horario{
+    background-color: #00cad1;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .box-contato {
+    text-align: center;
+  }
+  iframe{
+    width: 100%;
+  }
+  footer{
+    background-color:#0d6e71;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+ 
+
+  
+  

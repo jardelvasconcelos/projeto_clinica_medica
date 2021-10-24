@@ -1,0 +1,88 @@
+/* *{
+ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+.links-container{ 
+    padding: 0 20px;
+    text-align: center;
+}
+.links-topicos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center;
+}
+.links-topicos a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #00cad1;
+    margin: 0 10px 10px;
+    font-size: 18px; 
+ }
+ .links-topicos a:hover{ 
+     color: #0d6e71;  
+ }
+ .especialidades{
+    margin-top: 40px;
+ }
+ 
+ .cabecalho-especialidades{
+    padding: 0 20px;
+    /* text-align: center; */
+    
+ }
+ /* .cabecalho-especialidades p{
+    text-align: center;
+ } */
+ .horario-especialidades{
+     display: flex;
+     height: 240px;
+     padding: 0 20px;
+       
+ }
+ .horario-especialidades img{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+ }
+ .tabela-especialidades {
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+     
+ }
+ .tabela-especialidades thead tr{
+    background-color: #00cad1;
+    color: #fff;
+ }
+ .tabela-especialidades tr{
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+ }
+ .tabela-especialidades tbody tr:nth-of-type(2n+1){
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+ }
+ .tabela-especialidades th, .tabela-especialidades td{
+    padding: 10px; 
+ }
+ 
+ @media(max-width:425px){
+   .horario-especialidades {
+     padding: 0px;
+   }
+ }
+ @media(max-width:768px){
+    .horario-especialidades img {
+       display: none;
+    }
+    .tabela-especialidades {
+       width: 100%;
+    }
+  
+}
